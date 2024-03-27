@@ -8,8 +8,8 @@ const answer = await inquirer.prompt([
         message: "Select one of the opertor to perform operation",
         type: "list",
         name: "operator",
-        choices: ["Addition", "Subtraction", "Multiplication", "Division"]
-    }
+        choices: ["Addition", "Subtraction", "Multiplication", "Division"],
+    },
 ]);
 // condition statement .
 if (answer.operator === "Addition") {
@@ -27,3 +27,4 @@ else if (answer.operator === "Division") {
 else {
     console.log("Please select valid operator");
 }
+console.log("THE END");
